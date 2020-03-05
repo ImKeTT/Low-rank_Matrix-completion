@@ -6,7 +6,7 @@ import os
 import numpy as np
 import scipy.sparse as ss
 
-path_prefix = '/Users/imke/Downloads/Librec/dataset/'
+path_prefix = '/dataset/ml-1M'
 def dataloader(dataset = 'ratings'):
     fname = path_prefix + dataset+'.dat'
     max_uid = 0
