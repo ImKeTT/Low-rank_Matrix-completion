@@ -7,8 +7,9 @@ The implementations of the algorithms in this repository will focus on completin
 ### Algorithms
 
 1. **SVT** (A Singular Value Thresholding Algorithm for Matrix Completion)
-2. **Low-Rank Matrix Recovery via Efficient Schatten p-Norm Minimization**
-3. ....
+2. **Low-Rank Matrix Recovery via Efficient Schatten p-Norm Minimization**(find the paper [here](http://www.researchgate.net/publication/287095179_Low-rank_matrix_recovery_via_efficient_schatten_p-norm_minimization))
+3. **Factor Group-Sparse Regularization for Efficient Low-Rank Matrix Recovery**
+4. ...
 
 ### Dataset
 
