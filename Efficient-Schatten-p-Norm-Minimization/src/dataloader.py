@@ -4,9 +4,11 @@
 
 import os
 import numpy as np
+import time
 
 path_prefix = '/dataset/ml-1M'
 def dataloader(dataset = 'ratings'):
+    start = time.clock()
     fname = path_prefix + dataset+'.dat'
     max_uid = 0
     max_vid = 0
@@ -29,4 +31,5 @@ def dataloader(dataset = 'ratings'):
             movies.append(int(tks[1]) - 1)
             ratings.append(int(tks[2]))
     M_original = ss.csr_matrix((ratings, (users, movies)), shape=(max_uid, max_vid))
+    print("loading data time:%f" %(time.clock()-start))
     return M_original

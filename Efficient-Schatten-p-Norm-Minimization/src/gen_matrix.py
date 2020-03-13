@@ -5,6 +5,7 @@
 import numpy as np
 import random
 
+#generate a random matrix with shape n1*n2 and rank r to evaluate the algorithm 
 def gen_matrix(n1, n2, r):
     H = np.ones((n1,n2))
     M = np.random.random((n1,r)).dot(np.random.random((r,n2)))
