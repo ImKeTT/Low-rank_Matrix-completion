@@ -5,8 +5,9 @@
 import os
 import numpy as np
 import time
+import scipy.sparse as ss
 
-path_prefix = '/dataset/ml-1M'
+path_prefix = '../DATASET/ml-1M/'
 def dataloader(dataset = 'ratings'):
     start = time.clock()
     fname = path_prefix + dataset+'.dat'

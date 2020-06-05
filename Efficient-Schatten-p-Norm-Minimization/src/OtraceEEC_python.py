@@ -47,8 +47,8 @@ def OtraceEEC(M, H, p, iter_num, plot = True):
         diff = M_1 - X
         D = fractional_matrix_power((np.dot(X.T, X) + np.dot(st, np.eye(n))),(1-(p/2)))
         obj.append(np.trace((np.real(fractional_matrix_power((np.dot(X.T, X)+np.dot(st,np.eye(n))),(p/2))))))
-        print("iternum:%d  RMSE:%f" % (iter,(np.linalg.norm(diff) / np.sqrt(n*m))))
-        print_("Minimazation object:%f"% np.trace((np.real(fractional_matrix_power((np.dot(X.T, X)+np.dot(st,np.eye(n))),(p/2))))))
+        print("iternum:%d  RMSE:%f"  %(iter,(np.linalg.norm(diff) / np.sqrt(n*m))))
+        print("Minimazation object:%f" %np.trace((np.real(fractional_matrix_power((np.dot(X.T, X)+np.dot(st,np.eye(n))),(p/2))))))
         rmse.append(np.linalg.norm(diff) / np.sqrt(n*m))
     if plot:
         plt.figure(1)
