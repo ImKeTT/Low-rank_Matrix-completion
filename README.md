@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Implementations of algorithms in this repository will focus on completing low rank matrixes . Including traditional matrix trace and nuclear norm minimization as well as some algorithms related to the popular differentiable programming. And they are all implemented in python.
+Implementations of algorithms in this repository will focus on completing low rank matrixes . Including traditional matrix trace and nuclear norm minimization as well as some algorithms related to the popular differentiable programming. They are all implemented in python or MATLAB.
 
 ### Algorithms
 
